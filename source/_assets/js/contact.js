@@ -6,7 +6,7 @@ const send = (form) => {
     return fetch(form.action, {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-        body: JSON.stringify(Object.values(form.elements).slice(0, 5)
+        body: JSON.stringify(Object.values(form.elements).slice(0, -1)
             .reduce((acc, input) => ({ ...acc, [input.name]: input.value }), {})
         )
     })

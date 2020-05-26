@@ -17,11 +17,6 @@
         </div>
 
         <div>
-            <label for="subject">Subject (optional)</label><br>
-            <input type="text" name="subject" id="subject">
-        </div>
-
-        <div>
             <label for="message">Message</label><br>
             <textarea name="message" id="message" required></textarea>
         </div>
